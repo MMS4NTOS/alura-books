@@ -1,0 +1,147 @@
+.carrossel__titulo {
+    color: var(--laranja);
+    background-color: var(--branco);
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding: 0.5rem 0 0.5rem 0rem;
+    text-align: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: .5em 0;
+}
+
+.card {
+    background: var(--branco);
+    box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    border-radius: 0.625rem;
+    padding: 1.4375rem 1rem;
+    margin: 1.25rem;
+}
+
+.card_descricao {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em;
+    gap: 32px;
+}
+
+.descricao__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+    
+}
+
+.descricao__titulo_livro {
+    color: var(--azul-escuro);
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+
+.descricao__texto {
+    font-size: 14px;
+}
+
+.descricao__imagem {
+    width: 50%;
+    border-radius: 5px;
+}
+
+.card_botoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.botoes_redes {
+    display: flex;
+    align-items: center;
+}
+
+.botoes_ancora {
+    background-color: var(--laranja);
+    padding: 1em 1.8em;
+    color: var(--branco);
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    margin: 0.5em;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+    .carrossel__titulo {
+        font-size: 1.625rem;
+        padding: 1em;
+    }
+    .swiper-pagination {
+        margin: 2em 0;
+        transform: scale(1.6);
+        text-align: center;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        display: block;
+        top: 60%;
+    }
+   
+    .card {
+        width: 50%;
+        margin: 2em auto;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .carrosel__container {
+        display: flex;
+        align-items: center;
+        margin: 0 5vw 3em 5vw;
+        gap: 5rem;
+        width: auto;
+    }
+
+    .swiper-pagination {
+        margin: 1rem;
+    }
+
+    .descricao__titulo {
+        font-size: 2rem;
+    }
+
+    .descricao__texto {
+        font-size: 1rem;
+    }
+
+    .card {
+        width: 50%;
+        margin-top: 5rem;
+    }
+
+    .card_descricao {
+        margin: 0;
+    }
+
+    .descricao__titulo_livro {
+        margin: 1em 0;
+    }
+    
+    .swiper-wrapper {
+        display: flex;
+        gap: 3rem;
+    }
+    
+}
