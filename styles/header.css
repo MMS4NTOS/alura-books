@@ -25,13 +25,16 @@
     justify-content: space-between;
     align-items: center;
     padding: 1em;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 4;
    }
 
 .container {
     display: flex;
     align-items: center;
     gap: 1rem;
+    padding-right: 2rem;
 }
 
 .lista-menu {
